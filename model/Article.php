@@ -14,7 +14,8 @@ class Article {
     private User $user;
 
     
-    public function __construct($id = 0, $title = "", $published_at = "", $picture = "", $content = "", $user = new User())
+    public function __construct(int $id = 0, string $title = "", 
+        DateTime $published_at = "", string $picture = "", string $content = "", $user = new User())
     {
         $this->id = $id;
         $this->title = $title;
